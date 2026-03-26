@@ -3,8 +3,12 @@ package actividadGit;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class PruebaGit1 extends JFrame {
 
@@ -36,6 +40,16 @@ public class PruebaGit1 extends JFrame {
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JButton btnNewButton = new JButton("New button");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				JOptionPane.showMessageDialog(null, "Hola desde el master");
+			}
+		});
+		btnNewButton.setBounds(170, 116, 89, 23);
+		contentPane.add(btnNewButton);
 
 	}
 
