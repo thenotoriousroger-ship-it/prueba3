@@ -59,7 +59,15 @@ public class PruebaGit1 extends JFrame {
 		});
 		btnNewButton_1.setBounds(41, 35, 89, 23);
 		contentPane.add(btnNewButton_1);
+		
+		JButton btnyai = new JButton("yai");
+		btnyai.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				JOptionPane.showMessageDialog(null, "hola soy Yai");
+			}
+		});
+		btnyai.setBounds(41, 116, 89, 23);
+		contentPane.add(btnyai);
 
 	}
-
 }
